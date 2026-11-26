@@ -1,0 +1,22 @@
+[package]
+name = "agon"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.8" }
+chrono = { version = "0.4.44", features = ["serde"] }
+color-eyre = "0.6.5"
+dotenvy = "0.15.7"
+futures = "0.3.32"
+rosu-v2 = { git = "https://github.com/Chiffario/rosu-v2" }
+mnemosyne = { git = "https://github.com/arewelazeryet/mnemosyne.git" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.52.1", features = ["macros", "rt-multi-thread", "net"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+metrics-exporter-prometheus = "0.18.3"
+metrics = "0.24.5"
+crypto = "0.5.1"
+rustls = { version = "0.23.40", features = ["ring"] }
